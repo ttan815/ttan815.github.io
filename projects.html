@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body id="body" class="switchBackgroundToDark">
+    <!-- NavBar -->
+    <div class="container navBarContainer switchBackgroundToDarkNavBar" id="navBar">
+        <div class="row">
+            <div class="navBar">
+                <div class="navItem" id="text"><a href="/index.html"><span id="text">Home</span></a></div>
+                <div class="navItem" id="text"><a href="/projects.html" style="text-decoration: underline;"><span
+                            id="text">Projects</span></a></div>
+                <div class="navItem" id="text"><a href="/contact.html"><span id="text">Contact</span></a></div>
+                <div style="width: 100%; margin: 0; padding: 0;">
+                    <div class="dark-light" id="DarkLightModeBtn">
+                        <img class="dark-light-img" id="lightDarkModePic" style="height: 40px; width: 40px;"
+                            src="./icons8-sun-96.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="text">
+            <div class="cardForDark col-12" id="cardBackground">
+                <img class="card-img" src="./assetVault3D.png" alt="Card image cap">
+                <div class="card-body projects-title" id="text">
+                    Gantt Chart
+                </div>
+                <div class="card-body">
+                    <h5 class="skills-container">
+                        <div class="skills-used">
+                            HTML
+                        </div>
+                        <div class="skills-used">
+                            CSS
+                        </div>
+                        <div class="skills-used">
+                            Javascript
+                        </div>
+                        <div class="skills-used">
+                            Google App Script API
+                        </div>
+                    </h5>
+                    <p class="card-text">
+                    <ul class="card-text">
+                        <li>
+                            For my first project at the Design Hub internship, I collaborated closely with the client to
+                            gather key requirements and align the project with
+                            their vision. Maintained regular communication through weekly progress updates, ensuring the
+                            project met client expectations.
+                        </li>
+                        <li>
+                            Developed on Google's IDE, and allows users to submit files with metadata (e.g., client,
+                            year created, classes) and store
+                            the data in Google Sheets.
+                        </li>
+                        <li>
+                            Implemented a searchable list feature on the website to display submitted data, enabling
+                            users to click on entries to auto-fill input values, streamlining data entry and enhancing
+                            user experience.
+                        </li>
+                    </ul>
+                    </p>
+                    <button type="button" class="btn btn-dark" id="moreInfo"
+                        href="https://sites.google.com/apps.losrios.edu/arc-design-hub-public-files/internships"
+                        target="_blank" disabled>Unavailable
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="container" style="padding: 1px; padding-top: 30px;" id="text">
+        <div class="footer-container" id="text">
+            <div>
+                <p>
+                <p>Copyright © <span id="year"></span> Tony Tan</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./backend.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const mode = localStorage.getItem("themeMode");
+            if (mode === "light") {
+                applyLightMode();
+            } else {
+                applyDarkMode();
+            }
+        });
+
+    </script>
+</body>
+
+</html>
