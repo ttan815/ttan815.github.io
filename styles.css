@@ -1,6 +1,6 @@
 :root {
     --fontSize: 1.4rem;
-    --titleSize: 2.5rem;
+    --titleSize: 2.2rem;
 }
 
 body {
@@ -197,8 +197,8 @@ body {
 }
 
 .card-img {
-    object-fit: cover;
-    height: 500px;
+    object-fit: contain;
+    height: 350px;
     margin: 0px;
     border-radius: 15px;
 }
@@ -350,4 +350,25 @@ body {
         text-align: center;
         font-size: 2.6rem;
     }
+
+    .card-img {
+        object-fit: container;
+        height: 160px;
+        width: 261px;
+        margin: -20px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        padding: 0px;
+    }
+}
+
+.card-container {
+    max-width: 1000px;
+}
+
+#moreInfo {
+    margin-top: 15px;
+    width: 100%;
 }
