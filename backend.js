@@ -27,7 +27,7 @@ function applyLightMode() {
 
     document.body.classList.remove("switchBackgroundToDark");
     document.body.classList.add("switchBackgroundToLight");
-    document.getElementById("lightDarkModePic").src = "./icons8-moon-96.png";
+    document.getElementById("lightDarkModePic").src = "./icons8-sun-96.png";
 
     const navBar = document.getElementById("navBar");
     if (navBar) {
@@ -74,7 +74,7 @@ function applyDarkMode() {
 
     document.body.classList.remove("switchBackgroundToLight");
     document.body.classList.add("switchBackgroundToDark");
-    document.getElementById("lightDarkModePic").src = "./icons8-sun-96.png";
+    document.getElementById("lightDarkModePic").src = "./icons8-moon-96.png";
 
     const navBar = document.getElementById("navBar");
     if (navBar) {
