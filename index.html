@@ -6,6 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,10 +25,10 @@
     <div class="container navBarContainer switchBackgroundToDarkNavBar" id="navBar">
         <div class="row">
             <div class="navBar">
-                <div class="navItem" id="text"><a href="./index.html" style="text-decoration: underline;"><span
+                <div class="navItem" id="text"><a href="/index.html" style="text-decoration: underline;"><span
                             id="text">Home</span></a></div>
-                <div class="navItem" id="text"><a href="./projects.html"><span id="text">Projects</span></a></div>
-                <div class="navItem" id="text"><a href="./contact.html"><span id="text">Contact</span></a></div>
+                <div class="navItem" id="text"><a href="/projects.html"><span id="text">Projects</span></a></div>
+                <div class="navItem" id="text"><a href="/contact.html"><span id="text">Contact</span></a></div>
                 <div style="width: 100%; margin: 0; padding: 0;">
                     <div class="dark-light" id="DarkLightModeBtn">
                         <img class="dark-light-img" id="lightDarkModePic" style="height: 40px; width: 40px;"
@@ -41,13 +46,17 @@
                 <h1 class="about-me-name" id="text">Hi, I'm Tony!</h1>
             </div>
             <div class="col-md-12 col-lg-8 order-1 order-md-3 order-lg-2 about-me-desc" id="text">
-                An <span style="font-weight: bold;">aspiring</span> Software Engineer from California with a drive to
+                <!-- An <span style="font-weight: bold;">aspiring</span> Software Engineer from California with a drive to
                 learn. I enjoy
                 game-development and full-stack development. In my free time I enjoy playing video games, working out,
-                and hanging out with friends.
+                and hanging out with friends. -->
+                I'm an <span style="font-weight: bold;">aspiring</span> Software Engineer from California, passionate
+                about game and full-stack development. I've gained practical experience through internships and online
+                learning. Outside of coding, I
+                enjoy playing video games, working out, and spending time with friends.
             </div>
             <div class="col-md-12 col-lg-4 order-0 order-md-0 order-lg-3">
-                <img class="profile-pic" src="./tonyPic.png" alt="Profile Picture">
+                <img class="profile-pic" src="./tonyPIc.jpg" alt="Profile Picture">
             </div>
         </div>
     </div>
@@ -56,7 +65,7 @@
     <div class="container">
         <div class="row about-me-img-text">
             <div class="about-me-links col-sm">
-                <a class="about-me-items-border resumeButton" href="./ttan_resume.docx.pdf" target="_blank"
+                <a class="about-me-items-border resumeButton" href="./Tony_Tan_Resume.pdf" target="_blank"
                     id="text"><span id="text">Resume</span><img class="about-me-links-imgs-resume"
                         src="./icons8-resume-48.png"></a>
                 <a href="https://www.linkedin.com/in/tonytan2003/" target="_blank"><img class="about-me-links-imgs"
@@ -68,87 +77,37 @@
         </div>
     </div>
 
-    <!-- Work -->
-    <div class=" container projects-title" id="text">
-        Work
-    </div>
-    <div class="container card-container">
-        <div class="row" id="text">
-            <div class="cardForDark col-12" id="cardBackground">
-                <img class="card-img" src="./designHub.png" alt="Card image cap">
-                <div class="card-body projects-title" id="text">
-                    ARC Design Hub
-                </div>
-                <div class="card-body">
-                    <h5 class="skills-container">
-                        <div class="skills-used">
-                            January 2024 - Present
-                        </div>
-                    </h5>
-                    <p class="card-text">
-                    <ul class="card-text">
-                        <li>
-                            Worked on 2 projects that were commissioned by faculty at ARC Design Hub
-                        </li>
-                        <li>
-                            Used Google App Script, HTML, CSS, and Javascript to create each project
-                        </li>
-                        <li>
-                            Moved into the IT Department in Design Hub, where I am currently working with a client to
-                            help produce applications that help people with disabilities
-                        </li>
-                        <li>
-                            Refined my communication, time-management, and teamwork through weekly agendas and meetings
-                        </li>
-                    </ul>
-                    </p>
-                    <a type="button" class="btn btn-dark" id="moreInfo"
-                        href="https://sites.google.com/apps.losrios.edu/arc-design-hub-public-files/internships"
-                        target="_blank">More
-                        Info</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="container">
+        <h1 class="subcategory" id="text">Education & Work Experience</h1>
 
-    <!-- Education -->
-    <div class="container card-container" id="text">
-        <div class="projects-title" id="text">
-            Education
-        </div>
-        <div class="row">
-            <div class="cardForDark col-12" id="cardBackground">
-                <img class="card-img" src="./ARC_Logo_RedBlue_RGB.png" alt="Card image cap"
-                    style="object-fit: contain;">
-                <div class="card-body projects-title" id="text">
-                    American River College
+    </div>
+    <div class="container">
+        <div class="timeline">
+            <div class="timelineLeftContainer">
+                <div class="timelineImageAndDateContainer">
+                    <img src="./ARC_Logo_RedBlue_RGB.png" class="timelinePic">
+                    <p class="timelineDate" id="text">
+                        June 2024 - Present
+                    </p>
                 </div>
-                <div class="card-body">
-                    <h5 class="skills-container">
-                        <div class="skills-used">
-                            3.8 GPA
-                        </div>
-                        <div class="skills-used">
-                            Apart of CS Club
-                        </div>
-                        <div class="skills-used">
-                            Internship
-                        </div>
-                    </h5>
-                    <p class="card-text">
-                    <ul class="card-text">
-                        <li>
-                            A.S. in Computer Science
-                        </li>
-                        <li>
-                            Current member in Design Hub, an organization run by American River College faculty and
-                            industrial partners
-                        </li>
-                        <li>
-                            President of the Computer Science Club Fall 2023 Sophmore Year. Currently an officer of the
-                            club.
-                        </li>
-                    </ul>
+                <p class="timelineDescription" id="text">
+                    I began my Computer Science journey at American River College, quickly joining the Computer Science
+                    Club as an officer. Through the club, competed in two hackathons with friends, earning 2nd place in
+                    the NASA Space Apps Challenge. In my late freshman to sophomore year, I focused on honing my
+                    programming skills while gaining hands-on experience through a school internship at Design Hub.
+                </p>
+            </div>
+            <div class="timelineRightContainer">
+                <p class="timelineDescription" id="text">
+                    I began my Computer Science journey at American River College, quickly joining the Computer Science
+                    Club as an officer. Through the club, competed in two hackathons with friends, earning 2nd place in
+                    the NASA Space Apps Challenge. In my late freshman to sophomore year, I focused on honing my
+                    programming skills while gaining hands-on experience through a school internship at Design Hub.
+                </p>
+                <div class="timelineImageAndDateContainer">
+                    <img src="./designHubARC.jpg" class="timelinePic">
+                    <p class="timelineDate" id="text">
+                        January 2024 - Present
                     </p>
                 </div>
             </div>
