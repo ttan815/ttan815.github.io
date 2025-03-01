@@ -55,6 +55,18 @@ function applyLightMode() {
         form.classList.add("formTextLight");
     });
 
+    document.querySelectorAll('#timelineLeftContainer').forEach(text => {
+        text.classList.remove("timelineLeftDarkContainer");
+        text.classList.add("timelineLeftLightContainer");
+    });
+    document.querySelectorAll('#timelineRightContainer').forEach(text => {
+        text.classList.remove("timelineRightDarkContainer");
+        text.classList.add("timelineRightLightContainer");
+    });
+    document.querySelectorAll(".skills-usedDark").forEach(form => {
+        form.classList.remove("skills-usedDark");
+        form.classList.add("skills-usedLight");
+    });
 
     const contactName = document.getElementById("name");
     const contactEmail = document.getElementById("email");
@@ -100,6 +112,23 @@ function applyDarkMode() {
     document.querySelectorAll(".formText").forEach(form => {
         form.classList.remove("formTextLight");
         form.classList.add("formTextDark");
+    });
+    document.querySelectorAll('#timelineLeftContainer').forEach(text => {
+        text.classList.remove("timelineLeftLightContainer");
+        text.classList.add("timelineLeftDarkContainer");
+    });
+    document.querySelectorAll('#timelineRightContainer').forEach(text => {
+        text.classList.remove("timelineRightLightContainer");
+        text.classList.add("timelineRightDarkContainer");
+    });
+    document.querySelectorAll('#timelineRightContainer').forEach(text => {
+        text.classList.remove("timelineRightLightContainer");
+        text.classList.add("timelineRightDarkContainer");
+    });
+
+    document.querySelectorAll(".skills-usedLight").forEach(form => {
+        form.classList.remove("skills-usedLight");
+        form.classList.add("skills-usedDark");
     });
 
 
