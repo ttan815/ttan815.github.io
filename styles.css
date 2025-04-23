@@ -363,6 +363,10 @@ body {
     color: #202023;
 }
 
+.formTextLight:focus {
+    color: #202023;
+}
+
 /* akjdhskasjhdlkjashdlkashdlahdslhajdhasljdhsaldhalshdkajshdkljh */
 @media screen and (max-width: 480px) {
     .about-me-name {

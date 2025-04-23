@@ -80,6 +80,17 @@ function applyLightMode() {
     if (contactName) contactName.classList.add("formCheckLight");
     if (contactEmail) contactEmail.classList.add("formCheckLight");
     if (contactMessage) contactMessage.classList.add("formCheckLight");
+    const inputs = document.querySelectorAll("#name, #email, #message");
+    inputs.forEach(input => {
+        input.addEventListener("focus", () => {
+            input.classList.add("formTextLight");
+            input.classList.remove("formTextDark");
+        });
+        input.addEventListener("blur", () => {
+            input.classList.add("formTextLight");
+            input.classList.remove("formTextDark");
+        });
+    });
 }
 
 function applyDarkMode() {
@@ -144,6 +155,17 @@ function applyDarkMode() {
     if (contactName) contactName.classList.add("formCheckDark");
     if (contactEmail) contactEmail.classList.add("formCheckDark");
     if (contactMessage) contactMessage.classList.add("formCheckDark");
+    const inputs = document.querySelectorAll("#name, #email, #message");
+    inputs.forEach(input => {
+        input.addEventListener("focus", () => {
+            input.classList.add("formTextDark");
+            input.classList.remove("formTextLight");
+        });
+        input.addEventListener("blur", () => {
+            input.classList.add("formTextDark");
+            input.classList.remove("formTextLight");
+        });
+    });
 }
 
 function clearForm() {
