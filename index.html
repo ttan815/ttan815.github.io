@@ -6,6 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -60,102 +65,54 @@
     <div class="container">
         <div class="row about-me-img-text">
             <div class="about-me-links col-sm">
-                <a class="about-me-items-border resumeButton" href="./ttan_resume.docx.pdf" target="_blank"
+                <a class="about-me-items-border resumeButton" href="./Tony_Tan_Resume.pdf" target="_blank"
                     id="text"><span id="text">Resume</span><img class="about-me-links-imgs-resume"
                         src="./icons8-resume-48.png"></a>
-                <a href="https://www.linkedin.com/in/tonytan2003/" target="_blank"><img class="about-me-links-imgs"
-                        src="./icons8-linkedin-logo-48.png"></a>
-                <a href="https://github.com/ttan815" target="_blank"> <img class="about-me-links-imgs"
+                <a href="https://www.linkedin.com/in/tonytan2003/" target="_blank"><img
+                        class="about-me-buttons about-me-links-imgs" src="./icons8-linkedin-logo-48.png"></a>
+                <a href="https://github.com/ttan815" target="_blank"> <img class="about-me-buttons about-me-links-imgs"
                         src="./icons8-github-100.png"></a>
-                <a href="mailto:tonytan815@gmail.com"> <img class="about-me-links-imgs" src="./icons8-mail-94.png"></a>
+                <a href="mailto:tonytan815@gmail.com"> <img class="about-me-buttons about-me-links-imgs"
+                        src="./icons8-mail-94.png"></a>
             </div>
         </div>
     </div>
 
-    <!-- Work -->
-    <div class=" container projects-title" id="text">
-        Work
-    </div>
-    <div class="container card-container">
-        <div class="row" id="text">
-            <div class="cardForDark col-12" id="cardBackground">
-                <img class="card-img" src="./designHubARC.jpg" alt="Card image cap">
-                <div class="card-body projects-title" id="text">
-                    ARC Design Hub
-                </div>
-                <div class="card-body">
-                    <h5 class="skills-container">
-                        <div class="skills-used">
-                            January 2024 - Present
-                        </div>
-                    </h5>
-                    <p class="card-text">
-                    <ul class="card-text">
-                        <li>
-                            Worked on 2 projects that were commissioned by faculty at ARC Design Hub
-                        </li>
-                        <li>
-                            Used Google App Script, HTML, CSS, and Javascript to create each project
-                        </li>
-                        <li>
-                            Moved into the IT Department in Design Hub, where I am currently working with a client to
-                            help produce applications that help people with disabilities
-                        </li>
-                        <li>
-                            Refined my communication, time-management, and teamwork through weekly agendas and meetings
-                        </li>
-                    </ul>
-                    </p>
-                    <!-- <a type="button" class="btn btn-dark" id="moreInfo"
-                        href="https://sites.google.com/apps.losrios.edu/arc-design-hub-public-files/internships"
-                        target="_blank">More
-                        Info</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="container">
+        <h1 class="subcategory" id="text">Education & Work Experience</h1>
 
-    <!-- Education -->
-    <div class="container card-container" id="text">
-        <div class="projects-title" id="text">
-            Education
-        </div>
-        <div class="row">
-            <div class="cardForDark col-12" id="cardBackground">
-                <img class="card-img" src="./ARC_Logo_RedBlue_RGB.png" alt="Card image cap"
-                    style="object-fit: contain;">
-                <div class="card-body projects-title" id="text">
-                    American River College
+    </div>
+    <div class="container">
+        <div class="timeline">
+            <div class="timelineLeftDarkContainer" id="timelineLeftContainer">
+                <div class="timelineImageAndDateContainer">
+                    <img src="./ARC_Logo_RedBlue_RGB.png" class="timelinePic">
+                    <p class="timelineDate" id="text">
+                        June 2024 - Present
+                    </p>
                 </div>
-                <div class="card-body">
-                    <h5 class="skills-container">
-                        <div class="skills-used">
-                            3.8 GPA
-                        </div>
-                        <div class="skills-used">
-                            A part of CS Club
-                        </div>
-                        <div class="skills-used">
-                            Internship
-                        </div>
-                    </h5>
-                    <p class="card-text">
-                    <ul class="card-text">
-                        <li>
-                            A.S. in Computer Science
-                        </li>
-                        <li>
-                            Current member in Design Hub, an organization run by American River College faculty and
-                            industrial partners
-                        </li>
-                        <li>
-                            President of the Computer Science Club Fall 2023 Sophmore Year. Currently an officer of the
-                            club.
-                        </li>
-                    </ul>
+                <p class="timelineDescription" id="text">
+                    I began my Computer Science journey at American River College, quickly joining the Computer Science
+                    Club as an officer. Through the club, competed in two hackathons with friends, earning 2nd place in
+                    the NASA Space Apps Challenge. In my late freshman to sophomore year, I focused on honing my
+                    programming skills while gaining hands-on experience through a school internship at Design Hub.
+                </p>
+            </div>
+            <div class="timelineRightDarkContainer" id="timelineRightContainer">
+                <p class="timelineDescription" id="text">
+                    At Design Hub, I gained experience with various frameworks and programming languages, developing
+                    applications that supported professors and staff. Later, I transitioned to the IT department, where
+                    I worked with clients assisting disabled students, creating applications to streamline form-related
+                    tasks and improve accessibility.
+                </p>
+                <div class="timelineImageAndDateContainer">
+                    <img src="./designHubARC.jpg" class="timelinePic">
+                    <p class="timelineDate" id="text">
+                        January 2024 - Present
                     </p>
                 </div>
             </div>
+
         </div>
     </div>
 
